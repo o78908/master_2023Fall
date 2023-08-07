@@ -41,13 +41,13 @@ def convert_csv_to_excel(input_csv, output_excel):
 
 if __name__ == "__main__":
     # 輸入資料夾和輸出檔案名稱
-    excel_folder = "C:\\Users\\Modern 14\\Desktop\\csvTest\\excel"
-    csv_folder = "C:\\Users\\Modern 14\\Desktop\\csvTest\\csv"
+    excel_folder = "C:\\Users\\Modern 14\\Desktop\\excel"
+    csv_folder = "C:\\Users\\Modern 14\\Desktop\\csv"
     
     # 取得當天日期並以格式範例 "20230807" 命名檔案
     current_date = datetime.now().strftime("%Y%m%d")
-    merged_csv = f"C:\\Users\\Modern 14\\Desktop\\csvTest\\merged_{current_date}.csv"
-    output_excel = f"C:\\Users\\Modern 14\\Desktop\\csvTest\\merged_{current_date}.xlsx"
+    merged_csv = f"C:\\Users\\Modern 14\\Desktop\\merged_{current_date}.csv"
+    output_excel = f"C:\\Users\\Modern 14\\Desktop\\merged_{current_date}.xlsx"
 
     # 執行 Excel 轉換成 CSV 的功能
     convert_excel_to_csv(excel_folder, csv_folder)
